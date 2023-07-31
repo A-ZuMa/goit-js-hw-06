@@ -25,12 +25,18 @@ const list = document.querySelector('#ingredients')
 
 // createMarkup(ingredients)
 
-function createMarkup(arr) {
-  const markup = arr.map((element) =>
-    `<li class="item">${element}</li >`).join('')
+// function createMarkup(arr) {
+//   const markup = arr.map((element) =>
+//     `<li class="item">${element}</li >`).join('')
  
-    console.log(markup);
-  list.insertAdjacentHTML('beforeend', markup)
-  };
+//     console.log(markup);
+//   list.insertAdjacentHTML('beforeend', markup)
+//   };
 
-createMarkup(ingredients)
+// createMarkup(ingredients)
+
+ingredients.forEach((element) => {
+  let markup = `<li class="item">${element}</li>`;
+  // console.log(markup);
+  list.insertAdjacentHTML('beforeend', markup)
+  });

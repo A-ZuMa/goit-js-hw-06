@@ -10,7 +10,7 @@ function handlerSubmit(evt) {
     // console.log(email.value);
     // console.log(password.value);
     if (email.value === '' || password.value === '') {
-        alert ("Всі поля повинні бути заповнені")
+        return alert ("Всі поля повинні бути заповнені")
     }
     let resultForm = {
         email: email.value,
