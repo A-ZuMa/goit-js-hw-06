@@ -9,21 +9,21 @@ const ingredients = [
 
 const list = document.querySelector('#ingredients')
 
-// function createMarkup(arr) {
-//   // console.log(arr);
-//   const markup = arr.map(element => {
-//     const li = document.createElement('li');
-//     li.classList.add("item");
-//     // li.textContent = item;
-//     li.append(element);
-//     return li;
-//   });
-//   console.log(markup);
+function createMarkup(arr) {
+  // console.log(arr);
+  const markup = arr.map(element => {
+    const li = document.createElement('li');
+    li.classList.add("item");
+    // li.textContent = item;
+    li.append(element);
+    return li;
+  });
+  console.log(markup);
 
-//   list.append(...markup)
-// }
+  list.append(...markup)
+}
 
-// createMarkup(ingredients)
+createMarkup(ingredients)
 
 // function createMarkup(arr) {
 //   const markup = arr.map((element) =>
@@ -35,8 +35,10 @@ const list = document.querySelector('#ingredients')
 
 // createMarkup(ingredients)
 
-ingredients.forEach((element) => {
-  let markup = `<li class="item">${element}</li>`;
-  // console.log(markup);
-  list.insertAdjacentHTML('beforeend', markup)
-  });
+// ingredients.forEach((element) => {
+//   let markup = `<li class="item">${element}</li>`;
+//   console.log(markup);
+//   // let result = result + markup;
+//   // console.log("result", result);
+//   list.insertAdjacentHTML('beforeend', markup)
+// });
